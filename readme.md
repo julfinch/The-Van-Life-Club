@@ -49,12 +49,12 @@
 > - **npm i -D tailwindcss@latest postcss@latest autoprefixer@latest**
 
 2. From the **.src folder**, delete the following:
- - App.css
- - logo.svg
+    - App.css
+    - logo.svg
 
 3. Paste the **bg.jpg** to the **.src folder**
 4. Create a **Tailwind CSS config file** and **PostCSS config file**:
-> **npx tailwindcss init -p**
+    > **npx tailwindcss init -p**
 5. Open the **tailwind.config.js**
 6. Add the following:
     - source link for the content **["./src/**/*.{js,jsx}"]**
@@ -79,11 +79,11 @@ module.exports = {
 ```
 
 7. Under **index.html**, paste in the **<head>** section the link of the Montserrat font from *www.fonts-google.com*
-```html
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
-```
+    ```html
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"         rel="stylesheet">
+    ```
  
 8. Under the **index.css**, write the following:
 ```css
@@ -111,14 +111,14 @@ module.exports = {
 ```
 
 10. To open the live server, write in the terminal: 
-> npm run dev
+     > npm run dev
 
-*If this fails and live server doesn't load,*
-> 
-> If *'vite' is not recognized as an internal or external command, operable program of batch file.*
-> - **npm install**
-> *then*
-> **npm run dev**
+     *If this fails and live server doesn't load,*
+     > 
+     > If *'vite' is not recognized as an internal or external command, operable program of batch file.*
+     > - **npm install**
+     > *then*
+     > **npm run dev**
 
 11. Open the live server in: **http://localhost:3000/**
 
