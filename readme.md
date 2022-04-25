@@ -1,5 +1,6 @@
-# The Van Life Club
- 
+# The Van Life Club - Landing Page
+   
+   A simple landing page for a club with a working input email form in the middle for subscription using *getrevue.co* code.
 
 ## Table of contents
 
@@ -17,7 +18,7 @@
 
 ### Links
 
-- Live Site URL: [https://julfinch.github.io/Easybank/](https://julfinch.github.io/Easybank/)
+- Live Site URL: [https://julfinch.github.io/The-Van-Life-Club/](https://julfinch.github.io/The-Van-Life-Club/)
 
 ## My process
 
