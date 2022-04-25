@@ -1,4 +1,4 @@
-# The Coding School
+# The Van Life Club
  
 
 ## Table of contents
@@ -8,7 +8,6 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-
 
 ## Overview
 
@@ -61,46 +60,55 @@
     - source link for the content **["./src/**/*.{js,jsx}"]**
     - under the **colors** add **primary: '#EE9789'**
     - add **fontFamily: { sans: ['Montserrat', 'sans-serif'] }**
-> module.exports = {
->   content: **["./src/**/*.{js,jsx}"]**,
->   theme: {
->       extend: {
->           colors: {
->               **primary: '#EE9789'**
->           }
->       },
->       **fontFamily: {**
->           **sans: ['Montserrat', 'sans-serif']**
->       }
->   },
->   plugins: [],
-> }
+
+```js
+module.exports = {
+  content: **["./src/**/*.{js,jsx}"]**,
+  theme: {
+      extend: {
+          colors: {
+              **primary: '#EE9789'**
+          }
+      },
+      **fontFamily: {**
+          **sans: ['Montserrat', 'sans-serif']**
+      }
+  },
+  plugins: [],
+}
+```
+
 7. Under **index.html**, paste in the **<head>** section the link of the Montserrat font from *www.fonts-google.com*
-> <link rel="preconnect" href="https://fonts.googleapis.com">
-> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-> <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
-
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+```
+ 
 8. Under the **index.css**, write the following:
->   @tailwind base;
->   @tailwind components;
->   @tailwind utilities;
->   
->   body {
->       background-image: url('./bg.jpg');
->       background-size: cover;
->       background-position: top center;
->   }
-
+```css
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+  body {
+      background-image: url('./bg.jpg');
+      background-size: cover;
+      background-position: top center;
+  }
+```
+ 
 9. Open the **App.jsx** and delete everything and leave the following codes:
->   function App() {
->       return (
->           <div>
->           </div>
->       )
->   }
->
->   export default App
->
+```js
+  function App() {
+      return (
+          <div>
+          </div>
+      )
+  }
+
+  export default App
+```
 
 10. To open the live server, write in the terminal: 
 > npm run dev
@@ -122,19 +130,8 @@
 - ReactJS
 - Tailwind CSS
 
-### What I learned
-
-
-```js
-```
-
 ---
-
-
-### Useful resources
-
-
+ 
 ## Author
 
-- Frontend Mentor - [@julfinch](https://www.frontendmentor.io/profile/julfinch)
 - Twitter - [@julfinch](https://www.twitter.com/julfinch)
