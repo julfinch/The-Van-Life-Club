@@ -1,13 +1,17 @@
 {
   "name": "landing-page-1",
+  "homepage": "https://julfinch.github.io/The-Van-Life-Club/",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
