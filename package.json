@@ -1,7 +1,7 @@
 {
   "name": "landing-page-1",
   "homepage": "https://julfinch.github.io/The-Van-Life-Club/",
-  "public": true,
+  "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
