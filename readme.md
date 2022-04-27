@@ -138,6 +138,68 @@
 
 11. Open the live server in: `http://localhost:3000/`
 
+### Deployment of Vite App to Github
+   
+1. Open the **Source Control** in VsCode and publish the project as **Public on Github**
+   
+2. To sync all changes and connect to the github, on the terminal, type: 
+   > `git pull`
+   
+3. Write on the terminal:
+   > `npm i gh-pages`
+   
+4. This step is necessary for a **VITE App**, skip this if using only React. Open **vite.config.js** and add the github repo name as base:
+   > `base: '/The-Van-Life-Club/',`
+   
+   ```js
+      import { defineConfig } from 'vite'
+      import react from '@vitejs/plugin-react'
+
+      // https://vitejs.dev/config/
+      export default defineConfig({
+        base: '/The-Van-Life-Club/',
+        plugins: [react()]
+      })
+   ```
+   
+4. A **dist folder** and **package.json** will be automatically created, open **package.json** and add the following:
+   - `"homepage": "https://julfinch.github.io/The-Van-Life-Club/",`
+   - Under scripts, add: 
+      - `"predeploy": "npm run build",`
+      - `"deploy": "gh-pages -d dist",`
+   ```js
+   {
+  "name": "landing-page-1",
+  "homepage": "https://julfinch.github.io/The-Van-Life-Club/",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "vite": "^2.9.2"
+  }
+}
+   ```
+   
+5. Now, go back to the terminal and type:
+   > `npm run deploy`
+   
+6. On the Github repo, open **Settings** then **Pages**. Make sure that in the **Source**, the **Branch** should indicate the `gh-pages` instead of `master`
+   
+   
 ### Built with
 
 - Semantic HTML5 markup
