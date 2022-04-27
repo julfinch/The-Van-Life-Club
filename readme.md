@@ -167,31 +167,32 @@
    - Under scripts, add: 
       - `"predeploy": "npm run build",`
       - `"deploy": "gh-pages -d dist",`
+   
    ```js
-   {
-  "name": "landing-page-1",
-  "homepage": "https://julfinch.github.io/The-Van-Life-Club/",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "gh-pages": "^3.2.3",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
-    "@vitejs/plugin-react": "^1.3.0",
-    "vite": "^2.9.2"
-  }
-}
+      {
+     "name": "landing-page-1",
+     "homepage": "https://julfinch.github.io/The-Van-Life-Club/",
+     "private": true,
+     "version": "0.0.0",
+     "scripts": {
+       "dev": "vite",
+       "predeploy": "npm run build",
+       "deploy": "gh-pages -d dist",
+       "build": "vite build",
+       "preview": "vite preview"
+     },
+     "dependencies": {
+       "gh-pages": "^3.2.3",
+       "react": "^18.0.0",
+       "react-dom": "^18.0.0"
+     },
+     "devDependencies": {
+       "@types/react": "^18.0.0",
+       "@types/react-dom": "^18.0.0",
+       "@vitejs/plugin-react": "^1.3.0",
+       "vite": "^2.9.2"
+     }
+   }
    ```
    
 5. Now, go back to the terminal and type:
