@@ -24,6 +24,7 @@
 
 1. Open terminal or command prompt.
       > Type:
+      > 
       > `npm create vite landing-page-1`
       > 
       > *Need to install the following packages:*
@@ -55,6 +56,7 @@
       > `npm i`
       >
       > *added 80 packages. and audited 81 packages...*
+      > 
       > *found 0 vulnerabilities*
       >
       > `npm i -D tailwindcss@latest postcss@latest autoprefixer@latest`
@@ -65,7 +67,7 @@
 
 3. Paste the **bg.jpg** to the **.src folder**
 4. Create a **Tailwind CSS config file** and **PostCSS config file**:
-      `npx tailwindcss init -p`
+      >`npx tailwindcss init -p`
 5. Open the **tailwind.config.js**
 6. Add the following:
     - source link for the content `["./src/**/*.{js,jsx}"]`
@@ -74,15 +76,15 @@
 
     ```js
      module.exports = {
-      content: `["./src/**/*.{js,jsx}"]`,
+      content: ["./src/**/*.{js,jsx}"],
       theme: {
           extend: {
               colors: {
-                  `primary: '#EE9789'`
+                  primary: '#EE9789'
               }
           },
-          `fontFamily: {
-              sans: ['Montserrat', 'sans-serif']`
+          fontFamily: {
+              sans: ['Montserrat', 'sans-serif']
           }
       },
       plugins: [],
@@ -93,7 +95,7 @@
     ```html
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     ```
  
 8. Under the **index.css**, write the following:
@@ -127,8 +129,11 @@
      *If this fails and live server doesn't load,*
      > 
      > If *'vite' is not recognized as an internal or external command, operable program of batch file.*
+     >
      > `npm install`
+     >
      > *then*
+     >
      > `npm run dev`
 
 11. Open the live server in: `http://localhost:3000/`
