@@ -207,6 +207,7 @@
 - CSS custom properties
 - Flexbox
 - ReactJS
+- Vite
 - Tailwind CSS
 
 ---
