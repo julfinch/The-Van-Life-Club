@@ -202,19 +202,19 @@
    
 ### Deployment of Create-React-App to Github
  1. Write in the terminal:
-      `npm install gh-pages --save-dev`
+      >`npm install gh-pages --save-dev`
  2. A **build folder** and **package.json** will be automatically created, open **package.json** and add the following:
-   - `"homepage": "https://julfinch.github.io/shortly/",`
-   - Under scripts, add: 
-      - `"predeploy": "npm run build",`
-      - `"deploy": "gh-pages -d build",`
+      - `"homepage": "https://julfinch.github.io/shortly/",`
+      - Under scripts, add: 
+         - `"predeploy": "npm run build",`
+         - `"deploy": "gh-pages -d build",`
  3. Write in the terminal:
-      `git init`
-      then...
-      `git remote add origin https://github.com/julfinch/shortly.git`
+      >`git init`
+      >then...
+      >`git remote add origin https://github.com/julfinch/shortly.git`
  4. Then lastly:
-      `npm run deploy`
- 5. THe message should show **Published**
+      >`npm run deploy`
+ 5. The message should show **Published**.
 ### Built with
 
 - Semantic HTML5 markup
