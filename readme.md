@@ -30,11 +30,13 @@
       > then...
       > 
       > `yarn craete react-app secure-data`
-      > df
+      > 
+      > `cd secure-data`
+      > 
       > `yarn run`
-      > df
+      > 
       > `start`
-      > df
+      > 
 
 2. Copy paste te local host link to for the live server.
 
