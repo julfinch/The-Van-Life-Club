@@ -22,26 +22,7 @@
 
 ## My process
 
-1. In the terminal:
-      > Type:
-      > 
-      > `npm install -g yarn`
-      > 
-      > then...
-      > 
-      > `yarn craete react-app secure-data`
-      > 
-      > `cd secure-data`
-      > 
-      > `yarn run`
-      > 
-      > `start`
-      > 
-
-2. Copy paste te local host link to for the live server.
-
-
-4. Open terminal or command prompt.
+1. Open terminal or command prompt.
       > Type:
       > 
       > `npm create vite landing-page-1`
@@ -87,11 +68,32 @@
     - reportWebVitals.js
     - setupTests.js
 
-3. Paste the **bg.jpg** to the **.src folder**
-4. Create a **Tailwind CSS config file** and **PostCSS config file**:
+3. Delete `import logo from './logo.svg';` from `App.js`
+4. Delete `import reportWebVitals from './reportWebVitals';` from `index.js` including the lines below:
+      > // If you want to start measuring performance in your app, pass a function
+      > // to log results (for example: reportWebVitals(console.log))
+      > // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+      > reportWebVitals();
+5. Under **.src folder**, create an `assets` folder and `components` folder.
+6. Type `npm start` in the terminal to start the live server.
+7. Open `App.js` and delete everything, only leave the following lines:
+  
+  ```js
+  function App() {
+    return (
+      <>
+        
+      </>
+    );
+  }
+
+  export default App;
+  ```
+8. Type `npm i -D tailwindcss@latest postcss@latest autoprefixer@latest` to install Tailwind.
+9. Create a **Tailwind CSS config file** and **PostCSS config file**:
       >`npx tailwindcss init -p`
-5. Open the **tailwind.config.js**
-6. Add the following:
+10. Open the **tailwind.config.js**
+11. Add the following:
     - source link for the content `["./src/**/*.{js,jsx}"]`
     - under the **colors** add `primary: '#EE9789'`
     - add `fontFamily: { sans: ['Montserrat', 'sans-serif'] }`
@@ -113,14 +115,14 @@
     }
     ```
 
-7. Under **index.html**, paste in the **<head>** section the link of the Montserrat font from *www.fonts-google.com*
+12. Under **index.html**, paste in the **<head>** section the link of the Montserrat font from *www.fonts-google.com*
     ```html
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     ```
  
-8. Under the **index.css**, write the following:
+13. Under the **index.css**, write the following:
     ```css
       @tailwind base;
       @tailwind components;
@@ -133,7 +135,7 @@
       }
     ```
  
-9. Open the **App.jsx** and delete everything and leave the following codes:
+14. Open the **App.jsx** and delete everything and leave the following codes:
     ```js
       function App() {
           return (
@@ -145,7 +147,7 @@
       export default App
     ```
 
-10. To open the live server, write in the terminal: 
+15. To open the live server, write in the terminal: 
      >`npm run dev`
 
      *If this fails and live server doesn't load,*
@@ -158,7 +160,7 @@
      >
      > `npm run dev`
 
-11. Open the live server in: `http://localhost:3000/`
+16. Open the live server in: `http://localhost:3000/`
 
 ### Deployment of Vite App to Github
    
@@ -239,6 +241,7 @@
  5. Then lastly:
       >`npm run deploy`
  6. The message should show **Published**.
+   
 ### Built with
 
 - Semantic HTML5 markup
