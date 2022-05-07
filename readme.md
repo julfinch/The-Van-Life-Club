@@ -30,7 +30,16 @@
       > then...
       > 
       > `yarn craete react-app secure-data`
-1. Open terminal or command prompt.
+      > df
+      > `yarn run`
+      > df
+      > `start`
+      > df
+
+2. Copy paste te local host link to for the live server.
+
+
+4. Open terminal or command prompt.
       > Type:
       > 
       > `npm create vite landing-page-1`
