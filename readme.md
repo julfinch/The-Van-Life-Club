@@ -230,13 +230,15 @@
       - Under scripts, add: 
          - `"predeploy": "npm run build",`
          - `"deploy": "gh-pages -d build",`
- 3. Write in the terminal:
+            **BE MINDFUL OF THE COMMA TO AVOID ERRORS!**
+ 3. Go the Github website and create a new repository with the same name as the folder `secure-data`.
+ 4. Write in the terminal:
       >`git init`
       >then...
       >`git remote add origin https://github.com/julfinch/shortly.git`
- 4. Then lastly:
+ 5. Then lastly:
       >`npm run deploy`
- 5. The message should show **Published**.
+ 6. The message should show **Published**.
 ### Built with
 
 - Semantic HTML5 markup
