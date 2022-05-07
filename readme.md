@@ -22,6 +22,14 @@
 
 ## My process
 
+1. In the terminal:
+      > Type:
+      > 
+      > `npm install -g yarn`
+      > 
+      > then...
+      > 
+      > `yarn craete react-app secure-data`
 1. Open terminal or command prompt.
       > Type:
       > 
