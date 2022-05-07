@@ -82,7 +82,10 @@
 
 2. From the **.src folder**, delete the following:
     - App.css
+    - App.test.js
     - logo.svg
+    - reportWebVitals.js
+    - setupTests.js
 
 3. Paste the **bg.jpg** to the **.src folder**
 4. Create a **Tailwind CSS config file** and **PostCSS config file**:
